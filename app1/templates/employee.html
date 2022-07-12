@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<body>
+  <div class="row">
+    <h1 style="text-align:center;">Employee Creation</h1>
+  </div>
+    <form>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Name :</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail3">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">(Alias) :</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword3">
+          </div>
+        </div>
+        <div class="form-group row">
+            <label  class="col-sm-2 col-form-label">Under :</label>
+            <select >
+              <option selected>Choose...</option>
+              <option value="1">Primary</option>
+              
+            </select>
+        </div>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Date of joining :</label>
+            <div class="col-sm-10">
+              <input type="date" class="form-control" id="inputEmail3">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label  class="col-sm-2 col-form-label">Define salary details :</label>
+            <select >
+              <option selected>No</option>
+              <option value="1">Yes</option>
+              
+            </select>
+        </div>
+        
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Accept</button>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <h1 style="text-align:center;">General Information </h1>
+          </div>
+
+          <form>
+            <div class="form-row">
+              <div class="col">
+            
+                <input type="text" class="form-control" placeholder="Employee number">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Designation">
+              </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col">
+              
+                  <input type="text" class="form-control" placeholder="Function">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Location">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col">
+              
+                  <input type="text" class="form-control" placeholder="Gender">
+                  
+                </div>
+                <div class="col">
+                  <input type="date" class="form-control" placeholder="Date of Birth">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col">
+              
+                  <input type="text" class="form-control" placeholder="Blood group">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Father's/Mother's name">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col">
+              
+                  <input type="text" class="form-control" placeholder="Spouse's name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Address">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col">
+              
+                  <input type="number" class="form-control" placeholder="Phone noo">
+                </div>
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="Email">
+                </div>
+              </div>
+
+              <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Provide Bank Details :</label>
+  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>Choose...</option>
+    <option value="1">Yes</option>
+    <option value="2">No</option>
+    
+  </select>
+
+          </form>
+
+          <div class="row">
+            <h1 style="text-align:center;">Statutory Details </h1>
+          </div>
+
+          <form>
+            <div class="form-row">
+              <div class="col">
+            
+                <input type="text" class="form-control" placeholder="Income Tax Number(PAN)">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Aadhar Number">
+              </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col">
+              
+                  <input type="text" class="form-control" placeholder="Universal Account No(UAN)">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="PF Account no">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col">
+              
+                  <input type="text" class="form-control" placeholder="PR aaccount no(PRAN)">
+                  
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="ESI Number">
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+</body>
+
+
+
+
+{% endblock %}

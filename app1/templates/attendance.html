@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<body>
+    
+    <div class="row">
+        <h1 style="text-align:center;">Attendance/production Type Creation </h1>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Name ::</label>
+         
+          <input type="text" class="form-control" id="exampleFormControlInput1" >
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">(alias):</label>
+            
+            <input type="text" class="form-control" id="exampleFormControlInput1" >
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Formal Name :</label>
+           
+            <input type="email" class="form-control" id="exampleFormControlInput1" >
+          </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Attendance type :</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Attendance/Leave with pay</option>
+            <option>Leave without pay</option>
+            <option>Production</option>
+            <option>User defined calander type</option>
+        </select>
+        </div>
+        </form>
+
+
+
+
+    </body>
+
+{% endblock %}

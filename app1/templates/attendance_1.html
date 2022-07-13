@@ -1,5 +1,6 @@
 
 
+
 {% extends 'base.html' %}
 {% block body %}
 {% load static %}
@@ -9,7 +10,6 @@
             height:25vh;
             align-items: center;
             justify-content: center;
-            
         }
     .form1{
         display: flex;
@@ -42,7 +42,7 @@
 <div class="container">
     <div class="form1"style=" background-color:rgba(0,0,0,0.3);">
         <a href="javascript:history.go(-1);" class="close">+</a>
-        <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 5px 0; width:100%;">Employee Group Creation</h5>
+        <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 5px 0; width:100%;">Attendance/production type cretion</h5>
         <form action="" method="post">
 
 <!-- <div class="container">
@@ -59,7 +59,11 @@
         <div><p>Under</p></div>
         <select name="primary" id="primary">
             <option value="primary">Primary</option>
-        </select><br><br>
+        </select>
+        <div><p>Attendance Type</p></div>
+        <input type="text">
+        <div><p>period type</p></div>
+        <input type="text" value="Days"><br><br>
         
         
 <button><h5>Create</h5></button>
@@ -67,6 +71,17 @@
 </div>
 </div>
 {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,42 +1,156 @@
+
+
+
 {% extends 'base.html' %}
 {% block body %}
+{% load static %}
+    <style>
+        .container{
+            display: flex;
+            height:25vh;
+            align-items: center;
+            justify-content: center;
+        }
+    .form1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        
+    }
+    form{
+        padding:30px;
+    }
+    .close {
+        position: absolute;
+        top: 3px;
+        right: 8px;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        transform: rotate(45deg);
+        cursor: pointer;
+        text-decoration: none;
+        
+    }
+    button{
+        background-color:rgb(103, 175, 220) ;
+        color:white;
+        padding:10px 20px;
+    }
+</style>
+<div class="container">
+    <div class="form1"style=" background-color:rgba(0,0,0,0.3);">
+        <a href="javascript:history.go(-1);" class="close">+</a>
+        <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 5px 0; width:100%;">Attendance/production type cretion</h5>
+        <form action="" method="post">
 
-<body>
+<!-- <div class="container">
+<div class="form1">
+    <a href="javascript:history.go(-1);" class="close">+</a>
+    <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 5px 0; width:100%;">Group Alteration(Secondary)</h5>
+    <form action="" method="post"> -->
     
-    <div class="row">
-        <h1 style="text-align:center;">Attendance/production Type Creation </h1>
-      </div>
-
-      <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Name ::</label>
-         
-          <input type="text" class="form-control" id="exampleFormControlInput1" >
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">(alias):</label>
-            
-            <input type="text" class="form-control" id="exampleFormControlInput1" >
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Formal Name :</label>
-           
-            <input type="email" class="form-control" id="exampleFormControlInput1" >
-          </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Attendance type :</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>Attendance/Leave with pay</option>
-            <option>Leave without pay</option>
-            <option>Production</option>
-            <option>User defined calander type</option>
+        
+        <div><p>Name</p></div>
+        <input type="text">
+        <div><p>(Alias)</p></div>
+        <input type="text">
+        <div><p>Under</p></div>
+        <select name="primary" id="primary">
+            <option value="primary">Primary</option>
         </select>
-        </div>
-        </form>
-
-
-
-
-    </body>
-
+        <div><p>Attendance Type</p></div>
+        <select name="primary" id="primary">
+            
+            <option value="Attendance/Leave with pay">Attendance/Leave with pay</option>
+            <option value="Leave without pay">Leave without pay</option>
+            <option value="Production">Production</option>
+            <option value="User defined calander type">User defined calander type</option>
+        </select><br><br>
+        
+        
+<button><h5>Create</h5></button>
+    </form>
+</div>
+</div>
 {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

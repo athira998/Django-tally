@@ -21,6 +21,10 @@ urlpatterns = [
     path('load_employee',views.load_employee,name='load_employee'),
     path('load_unit_creation',views.load_unit_creation,name='load_unit_creation'),
     path('load_attendance',views.load_attendance,name='load_attendance'),
+    path('load_payroll_voucher',views.load_payroll_voucher,name='load_payroll_voucher'),
+    path('load_bank_details',views.load_bank_details,name='load_bank_details'),
+    path('load_attendance_1',views.load_attendance_1,name='load_attendance_1'),
+    path('load_attendance_2',views.load_attendance_2,name='load_attendance_2'),
 
 
 

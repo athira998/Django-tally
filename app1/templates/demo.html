@@ -38,32 +38,44 @@
         padding:10px 20px;
     }
 </style>
+<script>
+    $(document).ready(function() {
+  $("#id_recurring_event").change(function() {
+    if ($(this).val() === "No") {
+      $('#recurrence_pattern').hide();
+    } else {
+      $('#recurrence_pattern').show();
+    }
+  });
+  $("#id_recurring_event").trigger("change")
+})
+</script>
 <div class="container">
     <div class="form1"style=" background-color:rgba(0,0,0,0.3);">
         <a href="javascript:history.go(-1);" class="close">+</a>
         <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 5px 0; width:100%;">For Statutory and payroll reports</h5>
-        <form action="" method="post">
-
-<!-- <div class="container">
-<div class="form1">
-    <a href="javascript:history.go(-1);" class="close">+</a>
-    <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 5px 0; width:100%;">Group Alteration(Secondary)</h5>
-    <form action="" method="post"> -->
-    
-        
-        <div><p>A/c No</p></div>
-        <input type="text">
-        <div><p>IFS code</p></div>
-        <input type="number">
-        <div><p>Bank name</p></div>
-        <input type="text">
-        <div><p>Branch </p></div>
-        <input type="text"><br><br>
-       
-        
-        
-<button><h5>Create</h5></button>
-    </form>
+        <div class="content-section">
+            <form method="POST">
+              <fieldset class="form-group">
+                <div id="event_name">
+                  <p>name in payslip</p>
+                </div>
+                <div id="recurring_event">
+                  <select id="id_recurring_event">
+                    <option value="Yes">Yes</option>
+                    <option value="No" selected="true">No</option>
+                  </select>
+                </div>
+                <div id="recurrence_pattern">
+                    <div><p>Type</p></div>
+        <input type="text" value="compound" class="form-control">
+        <div><p>Type</p></div>
+        <input type="text" value="compound" class="form-control">
+                </div>
+                
+              </fieldset>
+            </form>
+          </div>
 </div>
 </div>
 {% endblock %}

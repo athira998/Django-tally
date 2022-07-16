@@ -43,6 +43,9 @@ def load_employee(request):
 def load_unit_creation(request):
     return render(request,'unit_creation.html')
 
+def load_unit_compound(request):
+    return render(request,'unit_compound.html')
+
 def load_attendance(request):
     return render(request,'attendance.html')
 
@@ -57,3 +60,18 @@ def load_attendance_1(request):
 
 def load_attendance_2(request):
     return render(request,'attendance_2.html')
+
+def load_pay_head_noapp(request):
+    return render(request,'pay_head_noapp.html')
+
+def load_pay_head_deduction(request):
+    return render(request,'pay_head_deduction.html')
+
+def load_pay_head_earning(request):
+    return render(request,'pay_head_earning.html')
+
+def load_pay_head_loans(request):
+    return render(request,'pay_head_loans.html')
+
+def load_demo(request):
+    return render(request,'demo.html')

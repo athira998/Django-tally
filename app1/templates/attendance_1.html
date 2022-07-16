@@ -7,7 +7,7 @@
     <style>
         .container{
             display: flex;
-            height:25vh;
+            height:35vh;
             align-items: center;
             justify-content: center;
         }
@@ -53,17 +53,24 @@
     
         
         <div><p>Name</p></div>
-        <input type="text">
+        <input type="text" class="form-control">
         <div><p>(Alias)</p></div>
-        <input type="text">
+        <input type="text" class="form-control">
         <div><p>Under</p></div>
-        <select name="primary" id="primary">
+        <select name="primary" id="primary" class="form-control">
             <option value="primary">Primary</option>
         </select>
         <div><p>Attendance Type</p></div>
-        <input type="text">
+        <select name="primary" id="primary" class="form-control">
+            
+            <option value="Attendance/Leave with pay">Attendance/Leave with pay</option>
+            <option value="Leave without pay">Leave without pay</option>
+            <option value="Production">Production</option>
+            <option value="User defined calander type">User defined calander type</option>
+        </select><br><br>
+        
         <div><p>period type</p></div>
-        <input type="text" value="Days"><br><br>
+        <input type="text" value="Days" class="form-control"><br><br>
         
         
 <button><h5>Create</h5></button>
